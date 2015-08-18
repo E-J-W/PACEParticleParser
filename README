@@ -1,0 +1,8 @@
+P^3 Codes
+Jonathan Williams
+
+This is a collection of codes which may be useful for parsing the particle analysis files outputted by PACE4.
+
+Use 'make' to compile everything.
+Run the codes with no arguments to see a description of the code and a list of required parameters.
+
