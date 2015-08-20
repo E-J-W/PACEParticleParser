@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
   //set up ROOT canvas and histogram
   if(h!=NULL)
     delete h;
-  h=new TH2D("ExiVsInitialSpin","ExiVsInitialSpin",50,0,50,50,0,50);
+  h=new TH2D("ExiVsInitialSpin","ExiVsInitialSpin",50,0,50,500,0,50);
   if(c!=NULL)
     delete c;
   c = new TCanvas("ExiVsInitialSpin","ExiVsInitialSpin",10,10, 700, 500);

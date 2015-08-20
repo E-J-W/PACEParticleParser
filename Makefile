@@ -17,8 +17,6 @@ InitialSpin: InitialSpin.c
 
 ExiVsInitialSpin: ExiVsInitialSpin.c
 	g++ ExiVsInitialSpin.c -Wall -o2 $(ROOT) -o PACE_ExiVsInitialSpin
-#force_count_wendi: force_count_wendi.c
-#	gcc force_count_wendi.c rs232.c wendi_functions.c -Wall -o2 -o force_count_wendi
 
 clean:
 	rm -rf *~ PACE_*
