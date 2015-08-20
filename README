@@ -3,6 +3,9 @@ Jonathan Williams
 
 This is a collection of codes which may be useful for parsing the particle analysis files outputted by PACE4.
 
-Use 'make' to compile everything.
+Use 'make' to compile everything.  To make codes which depend on ROOT, the environment variable ROOTSYS must point to the location of root.  This can be done by adding to your .bashrc:
+export ROOTSYS=/path/to/root 
+If you don't have ROOT, non-ROOT codes can be compiled using 'make no_root'.
+
 Run the codes with no arguments to see a description of the code and a list of required parameters.
 

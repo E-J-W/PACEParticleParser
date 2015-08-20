@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
     if(fgets(str[0],132,inp)!=NULL)
       while(fscanf(inp,"%s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s",str[0],str[1],str[2],str[3],str[4],str[5],str[6],str[7],str[8],str[9],str[10],str[11],str[12],str[13],str[14],str[15])!=EOF)
 	{
-          exi = atof(str[12]); //get Exi of the particle
+          exi = atof(str[12]); //get Exi of the compund nucleus
           if((exi<=max)&&(exi>=min)) //get the gate
             {
               e_lab = binfactor*atof(str[14]); //get lab energy of the particle
