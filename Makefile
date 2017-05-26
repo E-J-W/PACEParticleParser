@@ -1,7 +1,7 @@
 ROOT = $(shell $(ROOTSYS)/bin/root-config --glibs) -I$(ROOTSYS)/include
 
-all: ESpectrum ESpectrum_gateExi ESpectrum_gateAngle InitialSpin ExiVsInitialSpin DeltaExi_SecondaryParticles DeltaExi_FirstParticle DeltaExi_TwoParticles
-no_root: ESpectrum ESpectrum_gateExi ESpectrum_gateAngle DeltaExi_SecondaryParticles DeltaExi_FirstParticle DeltaExi_TwoParticles
+all: ESpectrum ESpectrum_gateExi ESpectrum_gateAngle InitialSpin ExiVsInitialSpin DeltaExi_SecondaryParticles DeltaExi_FirstParticle DeltaExi_TwoParticles PopulationStats
+no_root: ESpectrum ESpectrum_gateExi ESpectrum_gateAngle DeltaExi_SecondaryParticles DeltaExi_FirstParticle DeltaExi_TwoParticles PopulationStats
 
 ESpectrum: ESpectrum.c
 	g++ ESpectrum.c -Wall -o2 -o PACE_ESpectrum
@@ -26,6 +26,9 @@ DeltaExi_SecondaryParticles: DeltaExi_SecondaryParticles.c
 
 DeltaExi_TwoParticles: DeltaExi_TwoParticles.c
 	g++ DeltaExi_TwoParticles.c -Wall -o2 -o PACE_DeltaExi_TwoParticles
+	
+PopulationStats: PopulationStats.c
+	g++ PopulationStats.c -Wall -o2 -o PACE_PopulationStats
 
 clean:
 	rm -rf *~ PACE_*
