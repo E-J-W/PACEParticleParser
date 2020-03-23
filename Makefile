@@ -13,10 +13,10 @@ ESpectrum_gateAngle: ESpectrum_gateAngle.c
 	g++ ESpectrum_gateAngle.c -Wall -o2 -o PACE_ESpectrum_gateAngle
 
 InitialSpin: InitialSpin.c
-	g++ InitialSpin.c -Wall -o2 $(ROOT) -o PACE_InitialSpin
+	g++ InitialSpin.c -std=c++17 -Wall -o2 $(ROOT) -o PACE_InitialSpin
 
 ExiVsInitialSpin: ExiVsInitialSpin.c
-	g++ ExiVsInitialSpin.c -Wall -o2 $(ROOT) -o PACE_ExiVsInitialSpin
+	g++ ExiVsInitialSpin.c -std=c++17 -Wall -o2 $(ROOT) -o PACE_ExiVsInitialSpin
 
 DeltaExi_FirstParticle: DeltaExi_FirstParticle.c
 	g++ DeltaExi_FirstParticle.c -Wall -o2 -o PACE_DeltaExi_FirstParticle
